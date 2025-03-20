@@ -14,13 +14,9 @@ app.use(cors());
 
 const MONGO_URI = process.env.MONGO_URI;
 
-console.log(MONGO_URI);
-console.log(process.env.NAME);
-
-
 
 mongoose
-  .connect("mongodb+srv://nikhilgoswami1299:nikhil18121999G@cluster0.evacm.mongodb.net/")
+  .connect(MONGO_URI)
   .then(() => {
     console.log("Connected to MongoDB");
   })

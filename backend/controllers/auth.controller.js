@@ -3,7 +3,8 @@ import bcryptjs from 'bcryptjs';
 import { errorHandler } from '../middlewares/error.js';
 import jwt from 'jsonwebtoken';
 
-const JWT_SECRET = "MyJWTsecretKey"
+const JWT_SECRET = "MyJWTsecretKey";
+
 
 export const signup = async (req, res, next) => {
   const { username, email, password } = req.body;
