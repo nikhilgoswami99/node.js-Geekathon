@@ -1,7 +1,8 @@
-import User from '../models/user.model.js';
-import bcryptjs from 'bcryptjs';
+
 import { errorHandler } from '../middlewares/error.js';
 import jwt from 'jsonwebtoken';
+import User from '../models/user.model.js';
+import bcryptjs from 'bcryptjs';
 
 const JWT_SECRET = "MyJWTsecretKey";
 
